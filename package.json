@@ -1,0 +1,17 @@
+{
+  "name": "hello-agentic-test",
+  "version": "0.1.0",
+  "description": "A simple greeting CLI — test project for agentic dev team",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "greet": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
