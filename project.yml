@@ -1,0 +1,6 @@
+runtimes:
+  - node:22
+
+services: []
+
+mcp: []
