@@ -9,7 +9,7 @@ test('greet returns casual greeting', () => {
 
 // PAT-2: Formal greeting
 test('greet returns formal greeting', () => {
-  assert.equal(greet('Alice', 'formal'), 'Good day, Alice. It is a pleasure.');
+  assert.equal(greet('Alice', 'formal'), 'Good day, Alice. It is a pleasure. How do you do?');
 });
 
 // PAT-3: Pirate greeting

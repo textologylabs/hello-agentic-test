@@ -9,7 +9,7 @@ export function greet(name, mode) {
 
   switch (resolved) {
     case 'formal':
-      return `Good day, ${name}. It is a pleasure.`;
+      return `Good day, ${name}. It is a pleasure. How do you do?`;
     case 'casual':
       return `Hey ${name}!`;
     case 'pirate':
