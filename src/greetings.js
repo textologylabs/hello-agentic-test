@@ -11,7 +11,7 @@ export function greet(name, mode) {
     case 'casual':
       return `Hey ${name}!`;
     case 'formal':
-      return `Good day, ${name}. It is a pleasure. Welcome aboard.`;
+      return `Good day, ${name}. It is a pleasure. How do you do?`;
     case 'pirate':
       return `Ahoy, ${name}! Shiver me timbers!`;
     default:
