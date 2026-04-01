@@ -8,7 +8,7 @@ describe('greet()', () => {
     assert.equal(greet('Bob', 'casual'), 'Hey Bob!');
   });
 
-  // PAT-2: formal greeting — R2 specifies "How do you do?" (PAT-7 is malformed/incomplete; PAT-2 + R2 are authoritative)
+  // PAT-2 / PAT-7: formal greeting
   it('returns formal greeting', () => {
     assert.equal(greet('Alice', 'formal'), 'Good day, Alice. It is a pleasure. How do you do?');
   });
