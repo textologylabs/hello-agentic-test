@@ -1,7 +1,10 @@
 #!/usr/bin/env node
 
-// Greeting CLI — entry point
-// Usage: node src/index.js [name]
+export function greet(name) {
+  const resolved = name || 'World';
+  return `Hello, ${resolved}!`;
+}
 
-const name = process.argv[2] || 'World';
-console.log(`Hello, ${name}!`);
+if (import.meta.url === `file://${process.argv[1]}`) {
+  console.log(greet(process.argv[2]));
+}
