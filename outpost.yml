@@ -1,6 +1,16 @@
+version: 1
+name: hello-agentic-test
+
 runtimes:
   - node:22
 
 services: []
 
 mcp: []
+
+agents:
+  models:
+    dev: sonnet
+    qa:  sonnet
+    rev: opus
+  max_iterations: 2
