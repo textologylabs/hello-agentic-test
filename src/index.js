@@ -12,6 +12,13 @@ export function firstWord(str) {
   return trimmed.split(/\s+/)[0];
 }
 
+export function lastWord(str) {
+  const trimmed = str.trim();
+  if (trimmed === '') return '';
+  const words = trimmed.split(/\s+/);
+  return words[words.length - 1];
+}
+
 export function repeatStr(str, n) {
   const times = n < 0 ? 0 : n;
   return str.repeat(times);
