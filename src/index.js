@@ -24,6 +24,15 @@ export function repeatStr(str, n) {
   return str.repeat(times);
 }
 
+export function capitalizeWords(str) {
+  if (str === '') return '';
+  return str.split(/(\s+)/).map((part, i) =>
+    i % 2 === 0 && part.length > 0
+      ? part[0].toUpperCase() + part.slice(1).toLowerCase()
+      : part
+  ).join('');
+}
+
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   const name = process.argv[2] || 'World';
   console.log(`Hello, ${name}!`);
